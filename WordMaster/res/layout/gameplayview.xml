@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="178dp"
+        android:onClick="letterPressed" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="130dp"
+        android:gravity="center"
+        android:onClick="button1Pressed" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b1"
+        android:layout_alignBottom="@+id/b1"
+        android:layout_toRightOf="@+id/b1"
+        android:gravity="center"
+        android:onClick="button2Pressed" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b2"
+        android:layout_alignBottom="@+id/b2"
+        android:layout_toRightOf="@+id/b2"
+        android:gravity="center"
+        android:onClick="button3Pressed" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b3"
+        android:layout_alignBottom="@+id/b3"
+        android:layout_toRightOf="@+id/b3"
+        android:gravity="center"
+        android:onClick="button4Pressed" />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b4"
+        android:layout_alignBottom="@+id/b4"
+        android:layout_toRightOf="@+id/b4"
+        android:gravity="center"
+        android:onClick="button5Pressed" />
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b5"
+        android:layout_alignBottom="@+id/b5"
+        android:layout_toRightOf="@+id/b5"
+        android:gravity="center"
+        android:onClick="button6Pressed" />
+
+    <TextView
+        android:id="@+id/Letter1"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_above="@+id/b1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center|center_vertical"
+        android:text=""
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/Letter2"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignBaseline="@+id/Letter1"
+        android:layout_alignBottom="@+id/Letter1"
+        android:layout_alignLeft="@+id/b2"
+        android:gravity="center|center_vertical"
+        android:text=""
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/Letter3"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignBaseline="@+id/Letter2"
+        android:layout_alignBottom="@+id/Letter2"
+        android:layout_alignLeft="@+id/b3"
+        android:gravity="center|center_vertical"
+        android:text=""
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/Letter4"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignBaseline="@+id/Letter3"
+        android:layout_alignBottom="@+id/Letter3"
+        android:layout_alignLeft="@+id/b4"
+        android:gravity="center|center_vertical"
+        android:text=""
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/Letter5"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignBaseline="@+id/Letter4"
+        android:layout_alignBottom="@+id/Letter4"
+        android:layout_alignLeft="@+id/b5"
+        android:gravity="center|center_vertical"
+        android:text=""
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/Letter6"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignBaseline="@+id/Letter4"
+        android:layout_alignBottom="@+id/Letter4"
+        android:layout_toRightOf="@+id/b5"
+        android:gravity="center|center_vertical"
+        android:text=""
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="pausePressed"
+        android:text="||" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b5"
+        android:layout_below="@+id/b5"
+        android:layout_marginTop="16dp"
+        android:onClick="enterPressed"
+        android:text="Enter" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/enter"
+        android:layout_centerHorizontal="true"
+        android:onClick="deletePressed"
+        android:text="←" />
+
+    <Button
+        android:id="@+id/recall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/delete"
+        android:layout_toLeftOf="@+id/b3"
+        android:onClick="recallPressed"
+        android:text="Recall" />
+
+    <Button
+        android:id="@+id/shuffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b2"
+        android:layout_alignRight="@+id/b5"
+        android:layout_below="@+id/enter"
+        android:onClick="shufflePressed"
+        android:text="Shuffle" />
+
+    <TextView
+        android:id="@+id/dynamiteNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pause"
+        android:layout_toRightOf="@+id/Letter2"
+        android:text="22"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF8000"
+        android:textSize="100dp" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Letter3"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
