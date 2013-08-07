@@ -2,6 +2,7 @@
 <resources>
 
     <string name="hello">Hello World, WordMasterActivity!</string>
-    <string name="app_name">WordMaster</string>
+    <string name="app_name">Anagramix</string>
+    <string name="anagramix">Anagramix</string>
 
 </resources>

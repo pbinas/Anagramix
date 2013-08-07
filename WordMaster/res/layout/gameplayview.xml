@@ -6,6 +6,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout1"
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -197,7 +198,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#FF8000"
         android:textSize="100dp" />
-
+
+
     <TextView
         android:id="@+id/timer"
         android:layout_width="wrap_content"

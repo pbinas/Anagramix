@@ -60,6 +60,7 @@ public final class R {
         public static final int trues=0x7f040008;
     }
     public static final class string {
+        public static final int anagramix=0x7f050002;
         public static final int app_name=0x7f050001;
         public static final int hello=0x7f050000;
     }
